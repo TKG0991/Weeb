@@ -11,7 +11,8 @@ Firstday = dt.date(year=2021, month=7, day=4)
 Today = dt.date.today()
 passed=Today-Firstday
 
-"お迎えしてから ", passed.days, "日経ったよ！"
+"お迎えした日 : ", Firstday
+"お迎えしてから ", passed.days, "日たったよ！"
 #st.write(passed.strftime("お迎えしてから%Y年%mヶ月%d日"))
 
 img = Image.open('manao.jpeg')
