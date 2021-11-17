@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import datetime as dt
-import locale
 from PIL import Image
 from openpyxl import load_workbook
 
@@ -14,7 +13,6 @@ st.header('มะนาว')
 ###
 """
 
-locale.setlocale(locale.LC_TIME, 'ja_JP.UTF-8')
 Startday = dt.date(year=2021, month=7, day=3)
 Today = dt.date.today()
 Whatday_full = Today.strftime('%A')
