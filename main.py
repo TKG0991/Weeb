@@ -63,6 +63,6 @@ st.bar_chart(df['1日あたり'])
 if st.checkbox("データ一覧を見る"):
     #欠損を 空欄(スペース) に変換
     df_disp = df.fillna('　')
-    st.table(df_disp.sort_values('メーター', ascending=False))
-
+    #st.table(df_disp.sort_values('メーター', ascending=False))
+    st.dataframe(df_disp.sort_values('メーター', ascending=False))
 
